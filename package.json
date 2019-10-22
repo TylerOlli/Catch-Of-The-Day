@@ -1,7 +1,7 @@
 {
-  "name": "Catch Of The Day",
-  "version": "1.0.0",
-  "private": false,
+  "name": "cotd",
+  "version": "0.0.3",
+  "private": true,
   "devDependencies": {
     "concurrently": "4.1.0",
     "react-scripts": "^2.1.1"
