@@ -16,9 +16,7 @@ class App extends React.Component {
     // 2. Add Our New Fish To Fishes Variable
     fishes[`fish${Date.now()}`] = fish;
     // 3. Set The New Fishes Object To State
-    this.setState({
-      fishes
-    });
+    this.setState({ fishes });
   };
 
   loadSampleFishes = () => {
@@ -50,7 +48,7 @@ class App extends React.Component {
             ))}
           </ul>
         </div>
-        <Order />
+        <Order fishes={this.state.fishes} order={this.state.order} />
         <Inventory
           addFish={this.addFish}
           loadSampleFishes={this.loadSampleFishes}
